@@ -18,7 +18,7 @@ The logs for the run do not offer much more data. There do not appear to be any 
 
 - Whilst waiting for this to complete I was wondering if it would be possible to restart if the job failed for some reason. Not yet, but [it is on the roadmap](https://github.com/geekan/MetaGPT/issues/271). [Another.](https://github.com/geekan/MetaGPT/issues/228)
 - Code generation is currently limited to Python, even [if you request other languages](https://github.com/geekan/MetaGPT/issues/244).
-- As always with ChatGPT, what you currently get has guarantees. E.g., [code quality](https://github.com/geekan/MetaGPT/issues/183).
+- As always with ChatGPT, what you currently get has no guarantees. E.g., [code quality](https://github.com/geekan/MetaGPT/issues/183).
 - [People are trying to make this work with local LLM models](https://github.com/geekan/MetaGPT/issues/180). In a nutshell, it *should* work, but YMMV. 
 - More Agent roles [are coming](https://github.com/geekan/MetaGPT/issues/142)
 
