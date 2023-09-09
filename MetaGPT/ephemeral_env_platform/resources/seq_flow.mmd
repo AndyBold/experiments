@@ -1,0 +1,15 @@
+sequenceDiagram
+    participant U as User
+    participant P as Project
+    participant E as Environment
+    participant A as AzureManager
+    U->>P: create_project(name, description)
+    P->>E: create_environment(name)
+    E->>A: setup_environment()
+    A-->>E: environment_setup_complete()
+    E-->>P: environment_ready()
+    P-->>U: project_ready()
+    U->>E: teardown_environment()
+    E->>A: destroy_environment()
+    A-->>E: environment_destroyed()
+    E-->>U: environment_teardown_complete()

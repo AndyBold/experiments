@@ -1,0 +1,39 @@
+classDiagram
+    class Config{
+        +str SECRET_KEY
+        +str SQLALCHEMY_DATABASE_URI
+    }
+    class User{
+        +int id
+        +str username
+        +str password
+        +str email
+        +bool active
+        +list roles
+        +__init__(username: str, password: str, email: str, active: bool, roles: list)
+    }
+    class Role{
+        +int id
+        +str name
+        +str description
+    }
+    class Project{
+        +int id
+        +str name
+        +str description
+        +datetime created_at
+        +User user
+        +__init__(name: str, description: str, user: User)
+    }
+    class Environment{
+        +int id
+        +str name
+        +str status
+        +datetime created_at
+        +datetime destroyed_at
+        +Project project
+        +__init__(name: str, status: str, project: Project)
+    }
+    User "1" -- "*" Role: has
+    User "1" -- "*" Project: owns
+    Project "1" -- "*" Environment: has
