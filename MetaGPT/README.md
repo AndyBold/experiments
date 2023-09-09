@@ -23,7 +23,11 @@ The logs for the run do not offer much more data. There do not appear to be any 
 - More Agent roles [are coming](https://github.com/geekan/MetaGPT/issues/142)
 
 
-```
+## The run.
+
+- This is the raw log.
+<code>
+
 $ python startup.py "Create an ephemeral environment platform for development use on Microsoft Azure"
 
 2023-09-09 09:54:39.162 | INFO     | metagpt.config:__init__:44 - Config loading done.
@@ -853,4 +857,4 @@ Warning: gpt-4 may update over time. Returning num tokens assuming gpt-4-0613.
 2023-09-09 10:02:35.951 | INFO     | metagpt.actions.write_code_review:run:77 - Code review Dockerfile..
 2023-09-09 10:02:38.700 | ERROR    | metagpt.roles.engineer:_act_sp_precision:205 - code review failed!
 2023-09-09 10:02:38.701 | INFO     | metagpt.roles.engineer:_act_sp_precision:214 - Done /home/andyb/src/MetaGPT/workspace/ephemeral_env_platform/ephemeral_env_platform generating.
-```
+</code>
