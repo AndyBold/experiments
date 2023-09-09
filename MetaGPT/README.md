@@ -25,7 +25,7 @@ The logs for the run do not offer much more data. There do not appear to be any 
 
 ## The run.
 
-- This is the raw log. It contains strings that confuse the Github Markdown parser, so you might want to look at the 'raw' version of this page is you're viewing this in Github.
+- This is the raw log.
 ---
 
 
