@@ -25,8 +25,11 @@ The logs for the run do not offer much more data. There do not appear to be any 
 
 ## The run.
 
-- This is the raw log.
-<code>
+- This is the raw log. It contains strings that confuse the Github Markdown parser, so you might want to look at the 'raw' version of this page is you're viewing this in Github.
+---
+
+
+~~~
 
 $ python startup.py "Create an ephemeral environment platform for development use on Microsoft Azure"
 
@@ -857,4 +860,5 @@ Warning: gpt-4 may update over time. Returning num tokens assuming gpt-4-0613.
 2023-09-09 10:02:35.951 | INFO     | metagpt.actions.write_code_review:run:77 - Code review Dockerfile..
 2023-09-09 10:02:38.700 | ERROR    | metagpt.roles.engineer:_act_sp_precision:205 - code review failed!
 2023-09-09 10:02:38.701 | INFO     | metagpt.roles.engineer:_act_sp_precision:214 - Done /home/andyb/src/MetaGPT/workspace/ephemeral_env_platform/ephemeral_env_platform generating.
-</code>
+
+~~~
