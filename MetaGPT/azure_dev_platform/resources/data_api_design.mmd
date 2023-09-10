@@ -1,0 +1,17 @@
+classDiagram
+    class User{
+        +str username
+        +str password
+        +__init__(username: str, password: str)
+        +authenticate(password: str): bool
+    }
+    class Environment{
+        +str name
+        +str status
+        +User owner
+        +__init__(name: str, status: str, owner: User)
+        +start(): None
+        +stop(): None
+        +delete(): None
+    }
+    User "1" -- "*" Environment: owns

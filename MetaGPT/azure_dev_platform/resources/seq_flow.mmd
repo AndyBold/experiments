@@ -1,0 +1,16 @@
+sequenceDiagram
+    participant M as Main
+    participant U as User
+    participant E as Environment
+    M->>U: create user(username, password)
+    U->>M: return user
+    M->>U: authenticate(password)
+    U->>M: return authentication result
+    M->>E: create environment(name, status, user)
+    E->>M: return environment
+    M->>E: start environment
+    E->>M: update environment status
+    M->>E: stop environment
+    E->>M: update environment status
+    M->>E: delete environment
+    E->>M: delete environment
